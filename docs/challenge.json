@@ -4,7 +4,7 @@
   "description": "For challenge details see: https://github.com/galilai-group/stable-challenge-image-test/blob/main/CHALLENGE.md",
   "metric": "score",
   "direction": "maximize",
-  "evaluator_version": "eval-3842ba151a2e960f54115ccee09a0109",
+  "evaluator_version": "eval-3842ba151a2e960f54115ccee09a0109-423fed4b",
   "closes_at": null,
   "anonymous": true,
   "accepting_submissions": true,
