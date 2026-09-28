@@ -1,7 +1,7 @@
 {
   "slug": "stable-challenge-image-test",
   "title": "stable-challenge-image-test",
-  "description": "",
+  "description": "For challenge details see: https://github.com/galilai-group/stable-challenge-image-test/blob/main/README.md ",
   "metric": "score",
   "direction": "maximize",
   "evaluator_version": "v1",
