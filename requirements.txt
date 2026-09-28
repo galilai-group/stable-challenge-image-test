@@ -1,0 +1,10 @@
+datasets>=3
+numpy
+pillow
+onnx
+onnxruntime
+torch
+torchvision
+# baseline training only
+stable-pretraining
+kornia
