@@ -6,21 +6,22 @@
     "score"
   ],
   "direction": "maximize",
-  "evaluator_version": "eval-6f36d10175b1223d5f832530898554ab-d2918c2e",
+  "evaluator_version": "eval-6f36d10175b1223d5f832530898554ab-d1420d1a",
   "rows": [
     {
-      "rank": null,
+      "rank": 1,
       "participant": "7eb7ccb2c35a07d7",
       "participant_id": "7eb7ccb2c35a07d7",
       "groups": [],
-      "score": null,
-      "metrics": {},
-      "status": "failed",
+      "score": 0.5258849630662741,
+      "metrics": {
+        "score": 0.5258849630662741
+      },
+      "status": "succeeded",
       "submission_id": "9b47c51df1ad75d0c883aadc85a26d93db693e947491afe08c25177361844060",
-      "submitted_at": "2026-09-28T11:15:27.945Z",
-      "logs": "Evaluator did not return valid JSON. Organizers can inspect the private log for the traceback."
+      "submitted_at": "2026-09-28T11:15:27.945Z"
     }
   ],
-  "revision": 16,
-  "updated_at": "2026-09-30T12:33:59.249Z"
+  "revision": 17,
+  "updated_at": "2026-09-30T12:37:19.850Z"
 }
