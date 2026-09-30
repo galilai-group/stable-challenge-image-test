@@ -6,7 +6,7 @@
     "score"
   ],
   "direction": "maximize",
-  "evaluator_version": "eval-3842ba151a2e960f54115ccee09a0109-d79d026a",
+  "evaluator_version": "eval-3842ba151a2e960f54115ccee09a0109-649b7df3",
   "rows": [
     {
       "rank": null,
@@ -21,6 +21,6 @@
       "logs": "Evaluator did not return valid JSON. Organizers can inspect the private log for the traceback."
     }
   ],
-  "revision": 11,
-  "updated_at": "2026-09-28T11:27:58.727Z"
+  "revision": 12,
+  "updated_at": "2026-09-30T12:13:39.428Z"
 }
