@@ -6,8 +6,21 @@
     "score"
   ],
   "direction": "maximize",
-  "evaluator_version": "eval-6f36d10175b1223d5f832530898554ab",
-  "rows": [],
-  "revision": 14,
-  "updated_at": "2026-09-30T12:21:15.498Z"
+  "evaluator_version": "eval-6f36d10175b1223d5f832530898554ab-f34f90fc",
+  "rows": [
+    {
+      "rank": null,
+      "participant": "7eb7ccb2c35a07d7",
+      "participant_id": "7eb7ccb2c35a07d7",
+      "groups": [],
+      "score": null,
+      "metrics": {},
+      "status": "failed",
+      "submission_id": "9b47c51df1ad75d0c883aadc85a26d93db693e947491afe08c25177361844060",
+      "submitted_at": "2026-09-28T11:15:27.945Z",
+      "logs": "Evaluator did not return valid JSON. Organizers can inspect the private log for the traceback."
+    }
+  ],
+  "revision": 15,
+  "updated_at": "2026-09-30T12:24:20.136Z"
 }
