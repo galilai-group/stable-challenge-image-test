@@ -16,8 +16,12 @@ The data is meant for self-supervised learning. You may use the labels for monit
 stable-pretraining's `OnlineProbe`, but not in the training objective. Load it with
 `datasets.load_from_disk("data/train")` or `spt.data.HFDataset("data/train")`.
 
-## Submission format
 
+## Submission 
+
+Submissions should include an ONNX format model with input and output dimensions below. Before submission make sure `validate_submission.py` passes.
+
+## Model Format
 An ONNX file with:
 
 - **input** `image`: float32, `[B, 3, 96, 96]`, RGB scaled to [0, 1] then normalised with the ImageNet mean/std
@@ -26,3 +30,17 @@ An ONNX file with:
 For example: `export_onnx(encoder, path)` in [export_onnx.py](export_onnx.py) exports a PyTorch encoder. If the encoder outputs
 fewer than 1024 features it zero-pads them, which doesn't change the probe. It also checks the file with
 onnxruntime.
+
+
+## Validate submission
+
+TODO
+
+## Development
+
+- [ ] add validate submission: checks shapes
+- [ ] runs evaluation
+- [ ] add example submission
+
+Only submit once validation passes.
+
