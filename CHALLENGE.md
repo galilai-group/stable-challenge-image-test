@@ -1,9 +1,16 @@
 ## Quick start
 
+The environment is managed with [uv](https://docs.astral.sh/uv/getting-started/installation/). `uv sync` creates
+`.venv` from [pyproject.toml](pyproject.toml), with the exact versions pinned in `uv.lock`.
+
 ```bash
-pip install -r requirements.txt
-python training_data.py                              # -> data/train   (28,469 images, 96x96)
+uv sync                                                    # create .venv with all dependencies
+uv run training_data.py                                    # -> data/train   (28,469 images, 96x96)
+uv run test_submission.py example_submission/model.onnx    # check a model before submitting it
 ```
+
+Use `uv run` in front of any command (e.g. `uv run python my_training.py`), or activate the environment with
+`source .venv/bin/activate`. Add packages you need for training with `uv add <package>`.
 
 ## Training data
 
@@ -19,7 +26,7 @@ stable-pretraining's `OnlineProbe`, but not in the training objective. Load it w
 
 ## Submission 
 
-Submissions should include an ONNX format model with input and output dimensions below. Before submission make sure `validate_submission.py` passes.
+Submissions should include an ONNX format model with input and output dimensions below. Before submitting, make sure `uv run test_submission.py model.onnx` passes (see below).
 
 ## Model Format
 An ONNX file with:
@@ -34,13 +41,11 @@ onnxruntime.
 
 ## Validate submission
 
-TODO
+Check your model before uploading it:
 
-## Development
+```bash
+uv run test_submission.py path/to/model.onnx
+```
 
-- [ ] add validate submission: checks shapes
-- [ ] runs evaluation
-- [ ] add example submission
-
-Only submit once validation passes.
-
+It runs the same steps as the official evaluation and explains how to fix any problem it finds. The checks are
+listed at the top of [test_submission.py](test_submission.py). Only submit once validation passes.

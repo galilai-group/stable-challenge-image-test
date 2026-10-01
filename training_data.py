@@ -1,6 +1,6 @@
 """Build the pretraining mix: Imagenette + Galaxy10 DECaLS + EuroSAT, all 96x96 RGB.
 
-    python training_data.py            # -> data/train (datasets.save_to_disk)
+    uv run training_data.py            # -> data/train (datasets.save_to_disk)
 
 Load it with ``datasets.load_from_disk("data/train")`` or ``spt.data.HFDataset("data/train")``.
 """
